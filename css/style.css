@@ -79,6 +79,8 @@ img {
 /*--------------0--header----------------------*/
 .header {
     border-bottom: 1px solid #E7E9FC;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+
 }
 
 .header__row {
@@ -154,7 +156,7 @@ img {
     display: inline-block;
     padding: 24px 0;
     position: relative;
-    transition: background 0.5s;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list-header__link:hover {
@@ -204,12 +206,14 @@ address {
 
 .section {
     padding: 120px 0;
+    max-width: 1440px;
 }
 
 .content__hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg.jpg);
     background-repeat: no-repeat, no-repeat;
     background-size: cover, cover;
+    background-position: center;
     padding: 188px 0;
 }
 
@@ -246,7 +250,7 @@ address {
     color: #fff;
     min-width: 169px;
     height: 56px;
-    transition: background-color 0.5s;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .content-hero__button:hover {
